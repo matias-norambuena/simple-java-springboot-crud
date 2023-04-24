@@ -1,0 +1,22 @@
+
+spring:
+  application:
+    name: crud-tareas
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  profiles:
+    active: true
+
+datasource:
+  jdbc-url: jdbc:postgresql://localhost:5432/tareas_system
+  username: tareas_user
+  password: 12345
+  maximum-pool-size: 10
+  pool-name: "crud-pool"
+  auto-commit: true
+springdoc:
+  swagger-ui:
+    path=/swagger-ui:
+      html: /swagger-ui.html
